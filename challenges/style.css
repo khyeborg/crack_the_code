@@ -1,0 +1,132 @@
+body {
+	font-family: Helvetica;
+	/*background-image: url("images/asc_background.png");
+	background-repeat: no-repeat;*/
+	background-color: #3D3E41;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-size: 250%;
+}
+
+p {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+}
+
+.big_div {
+	display: flex;
+	justify-content: center;
+}
+
+.video_div {
+	/*background-color: aqua;*/
+	width: 60%;
+	text-align: center;
+}
+
+.questions_div {
+	background-color: white;
+	width: 40%;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: black;
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+tbody {
+	display: block;
+}
+
+td {
+	padding: 20px 10px;
+}
+
+tr {
+	vertical-align: text-top;
+}
+
+.button_div {
+	text-align: right;
+}
+
+.result_div {
+	background-color: #FFCC00;
+	font-size: 28px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#big_div_2 {
+	width: 40%;
+	margin: auto;
+}
+
+#please_select_div {
+	background-color: #FFCC00;
+	font-size: 28px;
+	line-height: 1.5;
+	text-align: center;
+	color: black;
+}
+
+.padding_div {
+	padding: 0px 20px;
+	padding-bottom: 20px;
+}
+
+button {
+	font-size: 15px;
+	padding: 5px;
+}
+
+#rewards_div {
+	text-align: center;
+}
+
+#user_info_div {
+	background-color: white;
+	color: black;
+	/*width: 40%;*/
+	margin-left: 50px;
+	margin-right: 50px;
+	margin: auto;
+	padding: 20px 30px;
+	font-size: 18px;
+	line-height: 2;
+}
+
+.info_questions {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+.confirm_button_div {
+	text-align: right;
+}
+
+label {
+	padding-left: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
