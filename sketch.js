@@ -98,7 +98,7 @@ class Logo {
 function mouseClicked() {
 	for (let i = 0; i < logosArray.length; i++) {
 		if (mouseX > logosArray[i].leftPoint && mouseX < logosArray[i].rightPoint && mouseY > logosArray[i].topPoint && mouseY < logosArray[i].bottomPoint) {
-			console.log("clicked " + logosArray[i].logoName + " logo");
+			// console.log("clicked " + logosArray[i].logoName + " logo");
 			window.location.replace("https://khyeborg.github.io/crack_the_code/challenges/" + logosArray[i].challengeNum + ".html");
 		}
 	}
