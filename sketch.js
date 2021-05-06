@@ -6,6 +6,10 @@ let logo1, logo2, logo3;
 
 let logosArray = [];
 
+let smokeImageArray = [];
+let smokeCounter = 0;
+let smokeDelayCounter = 0;
+
 function preload() {
 	mapImage = loadImage("images/map.png");
 	logo1Image = loadImage("images/asc_logo.png");
@@ -14,6 +18,10 @@ function preload() {
 	logo1NumImage = loadImage("images/1.png");
 	logo2NumImage = loadImage("images/2.png");
 	logo3NumImage = loadImage("images/3.png");
+
+	for (let i = 1; i <= 26; i++) {
+		smokeImageArray.push(loadImage("images/smoke_only/" + i + ".png"));
+	}
 }
 
 function setup() {
@@ -25,7 +33,7 @@ function setup() {
 	// instantiate logos
 	logo1 = new Logo("All Star Code", [logo1Image, 190, 400, 150, 136], [logo1NumImage, 270, 445, 60, 42], "challenge1", 1.3);
 	logo2 = new Logo("Girls Who Code", [logo2Image, 480, 180, 240, 105], [logo2NumImage, 610, 130, 70, 41], "challenge2", 1.2);
-	logo3 = new Logo("CS For All", [logo3Image, 800, 210, 170, 147], [logo3NumImage, 850, 300, 65, 38], "challenge3", 1.3);
+	logo3 = new Logo("CS For All", [logo3Image, 800, 210, 170, 147], [logo3NumImage, 850, 305, 65, 38], "challenge3", 1.2);
 
 	logosArray.push(logo1);
 	logosArray.push(logo2);
@@ -43,6 +51,19 @@ function draw() {
 	// noFill();
 	// strokeWeight(5);
 	// rect(width / 2, height / 2, 200, 100);
+
+	// smoke animation
+	image(smokeImageArray[smokeCounter], 460, 410, 170, 135);
+
+	if (smokeDelayCounter % 3 == 0) {
+		smokeCounter++;
+
+		if (smokeCounter == smokeImageArray.length) {
+			smokeCounter = 0;
+		}
+	}
+
+	smokeDelayCounter++
 }
 
 class Logo {
